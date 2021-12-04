@@ -15,7 +15,7 @@ const items = [
     title: 'Home'
   },
   {
-    href: '/404',
+    href: '/projects',
     icon: (<Cloud fontSize="small" />),
     title: 'Proyectos'
   },
@@ -25,7 +25,7 @@ const items = [
     title: 'Estadísticas'
   },
   {
-    href: '/404',
+    href: '/customers',
     icon: (<Group fontSize="small" />),
     title: 'Miembros'
   },
@@ -118,7 +118,7 @@ export const DashboardSidebar = (props) => {
         open
         PaperProps={{
           sx: {
-            backgroundColor: 'neutral.900',
+            backgroundColor: '#FFFFFF',
             color: '#FFFFFF',
             width: 200
           }

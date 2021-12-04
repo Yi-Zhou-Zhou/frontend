@@ -1,4 +1,4 @@
-import { format } from 'date-fns';
+
 import { v4 as uuid } from 'uuid';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import {
@@ -12,12 +12,9 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  TableSortLabel,
-  Tooltip
 } from '@mui/material';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { SeverityPill } from '../severity-pill';
-import { Today } from '@mui/icons-material';
 
 const orders = [
   {
@@ -142,6 +139,7 @@ export const LatestOrders = (props) => (
       }}
     >
       <Button
+        onClick={() => window.location.href = '/projects'}
         color="primary"
         endIcon={<ArrowRightIcon fontSize="small" />}
         size="small"
